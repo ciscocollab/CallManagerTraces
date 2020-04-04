@@ -17,7 +17,7 @@ NOTE: This script overwrites the files, make a copy of the files if you want to 
 """
 
 start_time = time.time()  # will be used to determine the full run time
-regex_IP = re.compile(r"\b(\d{1,3}\.\d{1,3})(\.\d{1,3}\.\d{1,3})\b", flags=re.DOTALL)  # This regex string finds IP addresses in the logs
+regex_IP = re.compile(r"\b(\d{1,3}\.\d{1,3})(\.\d{1,3}\.\d{1,3}).*\b", flags=re.DOTALL)  # This regex string finds IP addresses in the logs
 
 
 def find_and_replace(passed_dir):
